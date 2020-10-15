@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap-datetimepicker.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <style>
-       
-
-
-
+       @foreach($sliders as $key=>$slider)
+            .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child({{ $key + 1 }}) .item
+            {
+                background: url({{ asset('uploads/slider/'.$slider->image) }});
+                background-size: cover;
+            }
+        @endforeach
     </style>
 
     <script src="{{ asset('frontend/js/jquery-1.11.2.min.js') }}"></script>
