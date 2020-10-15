@@ -128,9 +128,9 @@
                                 <h2 class="pricing-title">Our Menu List For all Food</h2>
                                 <ul id="filter-list" class="clearfix">
                                     <li class="filter" data-filter="all">All</li>
-                                   
-
-                                    
+                                    @foreach($categories as $category)
+                                        <li class="filter" data-filter="#{{ $category->slug }}">{{ $category->name }}</li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
