@@ -9,9 +9,8 @@ use App\Http\Controllers\Controller;
 
 class SliderController extends Controller
 {
-    /
+    /* 
      * Display a listing of the resource.
-     *
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -20,8 +19,7 @@ class SliderController extends Controller
         return view('admin.slider.index',compact('sliders'));
     }
 
-    /
-     * Show the form for creating a new resource.
+    /* Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -30,8 +28,7 @@ class SliderController extends Controller
         return view('admin.slider.create');
     }
 
-    /
-     * Store a newly created resource in storage.
+    /* Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -66,8 +63,7 @@ class SliderController extends Controller
         return redirect()->route('slider.index')->with('successMsg','Slider Successfully Saved');
     }
 
-    /
-     * Display the specified resource.
+    /* Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -77,8 +73,7 @@ class SliderController extends Controller
         //
     }
 
-    /
-     * Show the form for editing the specified resource.
+    /* Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -89,8 +84,7 @@ class SliderController extends Controller
         return view('admin.slider.edit',compact('slider'));
     }
 
-    /
-     * Update the specified resource in storage.
+    /* Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
