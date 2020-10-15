@@ -19,13 +19,10 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap-datetimepicker.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <style>
-        @foreach($sliders as $key=>$slider)
-            .owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child({{ $key + 1 }}) .item
-            {
-                background: url({{ asset('uploads/slider/'.$slider->image) }});
-                background-size: cover;
-            }
-        @endforeach
+       
+
+
+
     </style>
 
     <script src="{{ asset('frontend/js/jquery-1.11.2.min.js') }}"></script>
@@ -128,9 +125,9 @@
                                 <h2 class="pricing-title">Our Menu List For all Food</h2>
                                 <ul id="filter-list" class="clearfix">
                                     <li class="filter" data-filter="all">All</li>
-                                    @foreach($categories as $category)
-                                        <li class="filter" data-filter="#{{ $category->slug }}">{{ $category->name }}</li>
-                                    @endforeach
+                                   
+
+                                    
                                 </ul>
                             </div>
                         </div>
