@@ -16,7 +16,7 @@ class ReservationController extends Controller
             'email' => 'required|email',
             'dateandtime' => 'required'
         ]);
-        $reservation = new Reservation();
+        $reservation = new Reservation;
         $reservation->name = $request->name;
         $reservation->phone = $request->phone;
         $reservation->email = $request->email;

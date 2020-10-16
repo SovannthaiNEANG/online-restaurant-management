@@ -17,7 +17,7 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
-        $contact = new Contact();
+        $contact = new Contact;
         $contact->name = $request->name;
         $contact->email = $request->email;
         $contact->subject = $request->subject;

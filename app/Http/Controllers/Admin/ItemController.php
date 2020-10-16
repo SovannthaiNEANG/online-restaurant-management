@@ -63,7 +63,7 @@ class ItemController extends Controller
         }else{
             $imagename = "default.png";
         }
-        $item = new Item();
+        $item = new Item;
         $item->category_id = $request->category;
         $item->name = $request->name;
         $item->description = $request->description;

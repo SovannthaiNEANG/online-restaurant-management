@@ -55,7 +55,7 @@ class SliderController extends Controller
             $imagename = 'dafault.png';
         }
 
-        $slider = new Slider();
+        $slider = new Slider;
         $slider->title = $request->title;
         $slider->sub_title = $request->sub_title;
         $slider->image = $imagename;
