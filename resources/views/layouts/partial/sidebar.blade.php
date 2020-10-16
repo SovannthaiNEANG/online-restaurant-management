@@ -28,7 +28,7 @@
             <li class="{{ Request::is('admin/item*') ? 'active': '' }}">
                 <a href="{{ route('item.index') }}">
                     <i class="material-icons">library_books</i>
-                    <p>Items</p>
+                    <p>Items Food</p>
                 </a>
             </li>
             <li class="{{ Request::is('admin/reservation*') ? 'active': '' }}">
